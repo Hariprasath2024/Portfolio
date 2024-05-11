@@ -12,16 +12,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
-                <ul>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Portfolio</a></li>
                     <li><a href="">Contact</a></li>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times"  onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
@@ -32,15 +32,15 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/user.png" >
+                        <img src="images/image1.jpg" >
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, architecto eligendi. Saepe ipsam illo tempora, voluptas dolor id eaque optio a, asperiores, laboriosam provident! Natus eaque dignissimos eos, doloremque rem veniam officiis velit repellat praesentium eligendi cumque nesciunt porro! Quisquam reprehenderit tempore porro neque ab, eligendi nobis qui nihil facere?</p>
+                        <p>Hello! I'm Hariprasath, specialized in C, Java, and JavaScript. With a solid foundation in these languages, I bring extensive experience in web development . My expertise lies in creating robust and scalable web applications, leveraging modern frameworks and tools to deliver exceptional user experiences.</p>
                         <div class="tab-title">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
-                            <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                            <p class="tab-links" onclick="opentab('internship')">Interest</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
@@ -51,44 +51,45 @@
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2024-Current</span><br>Pursuing Master of Computer Applications</li>
-                                <li><span>2020-2023</span><br>BSc Computer Science</li>
+                                <li><span>2024-Current</span><br>Pursuing Master of Computer Applications  at Kongu Engineering College and will complete it in 2025.</li>
+                                <li><span>2020-2023</span><br>I have completed my undergraduate degree in BSc Computer Science at Sri Ramakrishna Mission Vidyalaya Arts and Science.</li>
                                 <li><span>2019</span><br>Higher study</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="internship">
                             <ul>
-                                <li><span>Company_Name</span><br>ZF-Group</li>
-                                <li><span>Role</span><br>Plant Engineering And Maintenance</li>
-                                <li><span>Project</span><br>Condition Monitoring Prediction using Python</li>
+                                <li><span>DataStructure</span><br>I have a keen interest in data structures due to their pivotal role in optimizing algorithms and solving complex problems efficiently</li>
+                                <li><span>DataBase</span><br>My passion for databases lies in their pivotal role as the backbone of modern applications, efficiently storing, managing, and retrieving vast amounts of data to power seamless user experiences</li>
+                                <!-- <li><span>Project</span><br>Condition Monitoring Prediction using Python</li> -->
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+       
         <div id="services">
             <div class="container">
                 <h1 class="sub-title">
-                    My Services
+                    My certificate
                 </h1>
                 <div class="services-list">
                    <div>
                     <i class="fas fa-code"></i>
-                   <h2>Web Design</h2>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloribus, adipisci vitae vel corrupti facilis inventore quod, pariatur ullam fugit quidem aliquid voluptatum doloremque quaerat neque? Accusamus, non perferendis maiores, similique numquam assumenda quos placeat doloribus consequatur, eius perspiciatis iusto?</p>
+                   <h2>Debugging</h2>
+                    <p>I am proud to have won the first prize in a debugging competition at Kongu Engineering College, showcasing my ability to identify and resolve complex technical issues efficiently under pressure. This experience not only honed my debugging skills but also taught me the importance of perseverance and quick problem-solving in the field of software development</p>
                    <a href="">Learn more</a>
                 </div>
                 <div >
                     <i class="fas fa-crop-alt"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloribus, adipisci vitae vel corrupti facilis inventore quod, pariatur ullam fugit quidem aliquid voluptatum doloremque quaerat neque? Accusamus, non perferendis maiores, similique numquam assumenda quos placeat doloribus consequatur, eius perspiciatis iusto?</p>
+                    <h2>Java course</h2>
+                    <p>I am also a certified Java developer, having completed the Java certificate program through Infosys Springboard. This comprehensive training equipped me with in-depth knowledge and practical skills in Java programming, further enhancing my expertise in software development. I am excited to apply my Java proficiency to create innovative solutions and contribute meaningfully to challenging projects</p>
                     <a href="">Learn more</a>
                  </div>
                  <div >
                     <i class="fas fa-app-store"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloribus, adipisci vitae vel corrupti facilis inventore quod, pariatur ullam fugit quidem aliquid voluptatum doloremque quaerat neque? Accusamus, non perferendis maiores, similique numquam assumenda quos placeat doloribus consequatur, eius perspiciatis iusto?</p>
+                    <h2>Internship</h2>
+                    <p>During my internship, I had the privilege of learning from experienced mentors and collaborating with talented colleagues. Under the guidance of Mr. R. Senthikumar, Senior Manager at ZF Company's Plant Engineering and Maintenance Department during my undergraduate studies, I gained valuable insights into various aspects of engineering and maintenance processes. Additionally, I developed proficiency in data visualization techniques, allowing me to analyze and present complex data effectively. This hands-on experience not only enriched my technical skills but also fostered my ability to work in dynamic team environments and adapt to real-world challenges</p>
                     <a href="">Learn more</a>
                  </div>
                 </div> 
@@ -96,29 +97,29 @@
         </div >
         <div id="portfolio">
             <div class="container">
-                <h1 class="sub-title">My Work</h1>
+                <h1 class="sub-title">My Project</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="images/work-1.png" >
+                        <img src="images/estate.jpg" >
                         <div class="layer">
-                            <h3>web devolper</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nostrum pariatur eius facilis similique nisi corrupti id, ad distinctio architecto consequuntur cum eveniet veritatis, dolores, maiores reprehenderit ipsam corporis est perferendis! Aut totam aperiam nam delectus asperiores ipsa illum autem blanditiis ab nihil? Inventore, maxime laborum sequi quia nihil saepe.</p>
+                            <h3>Real-estate</h3>
+                            <p>One of my notable projects is 'Real-Estate', developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This project aimed to provide users with a seamless platform for browsing and purchasing homes. Leveraging my expertise in full-stack web development, I implemented features that allowed users to search for properties based on their preferences, view detailed listings with photos and description</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/resume.jpeg" >
+                        <div class="layer">
+                            <h3>Resume Builder</h3>
+                            <p>I took on the development of a Resume Builder application using the MERN (MongoDB, Express.js, React.js, Node.js) stack. In this project, I focused on creating an intuitive and feature-rich platform that allows users to easily generate professional resumes tailored to their unique career goals.</p>
                             <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="work">
                         <img src="images/work-1.png" >
                         <div class="layer">
-                            <h3>Real-Estate</h3>
-                            <p>the app is very useful</p>
-                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work-1.png" >
-                        <div class="layer">
-                            <h3>Social Media App</h3>
-                            <p>the app is very useful</p>
+                            <h3>Expense Tracker</h3>
+                            <p>During my college course, I developed a simple expense tracker using React. This project allowed us to efficiently manage our expenses by providing a user-friendly interface to input and track expenses.</p>
                             <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
@@ -141,15 +142,16 @@
                             
                             
                         </div>
-                        <a href="images/"  download ="btn btn2">Dowload CV</a>
+                        <a href="images/resume3.pdf"  download ="btn btn2">Dowload CV</a>
                     </div>
                     <div class="contact-right">
-                        <form action="">
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
@@ -160,5 +162,23 @@
     </div>
 
     <script src="script.js"></script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzqabniI86WkeoppmFpib-356NnnjA2_Lv49h0_YQgGP9I-8EUBgOYGx6wq3CxBy_bXaw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message send successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
